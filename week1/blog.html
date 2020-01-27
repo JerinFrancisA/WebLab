@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<body>
+<head>
+ <style>
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+}
+.column {
+  padding-left: 30px;
+  float: left;
+  width: 15%;
+}
+.column2 {
+  padding-left: 0px;
+  width:30%;
+  float: left;
+}
+.column3 {
+  padding-right: 30px;
+  padding-left: 30px;
+  width:10%;
+  border-style: dotted;
+  border-color: green;
+  float: right;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<h1 style="background-color:yellow;" align='center'>My Blog About My Life</h1>
+<div class='row'>
+	<div class='column'>
+		<h3>Menu</h3>
+		<a href=''>Today           </a><br>
+		<a href=''>Yesterday       </a><br>
+		<a href=''>Last Week       </a><br>
+		<a href=''>Archves         </a>
+	</div>
+	<div class='column'>
+		<div class="vl"></div> 
+	</div>
+	<div class='column2'>
+		<h3>Meeting with supervisor</h3>
+		<h4>12/12/2019</h4><br>
+		Today there was a meeting<br>
+		I went and met my supervisor<br>
+		we discussed about a project<br>
+		<h3>New Car</h3><br>
+		<h4>24/12/2019</h4><br>
+		Today I got my new car delivered<br>
+		Honda Jazz, 2020 v3.2<br>
+		Smooth sailing !<br>
+		<h3>Meeting my Parents</h3><br>
+		<h4>06/01/2020</h4><br>
+		Today I went and met my parents in Bangalore<br>
+		They were happy to see me<br>
+		and later that day I had DL test<br>
+	</div>
+	<div class='column3'>
+		<p border-style='dotted'>
+			<h3>Last Posts</h3><br>
+			<a href=''>Meeting with supervisor</a>
+			<a href=''>New Car</a>
+			<a href=''>Meeting my parents</a>
+		</p>
+	</div>
+</div>
+<p align='center'><a href=''>Contact : xyz@gmail.com</a></p>
+</body>
+</html>
