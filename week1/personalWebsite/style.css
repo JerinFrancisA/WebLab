@@ -1,0 +1,16 @@
+html, body {
+	height:100%;
+	width:100%;
+}
+h1 {
+	color: blue;
+}
+
+#bgimage {
+	background-image: url('https://www.bitdegree.org/tutorials/wp-content/uploads/2018/08/what-is-a-web-developer.jpg');
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	opacity: 0.85;
+}
+
