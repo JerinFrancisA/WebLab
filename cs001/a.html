@@ -1,0 +1,26 @@
+<head>
+<script type="text/javascript">
+	function mixup(s1, s2) {
+		var temp1_0 = s1.slice(0,2);
+		var temp1_1 = s1.slice(2,s1.length);
+		var temp2_0 = s2.slice(0,2);
+		var temp2_1 = s2.slice(2,s2.length);
+		var res = temp2_0 + temp1_1 + " " + temp1_0 + temp2_1
+		alert(res)
+	}
+	//mixup("mix", "pod")		
+	//mixup("dog", "dinner")
+		
+	function verbing(s) {
+		if(s.length < 3) alert(s);
+		else {
+			if(s.slice(s.length - 3, s.length + 1) == "ing")
+				alert(s + "ly")
+			else {
+				alert(s + "ing")	
+			}
+		}
+	}
+	verbing("s")
+</script>
+</head>

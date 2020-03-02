@@ -1,0 +1,22 @@
+<head>
+<script type="text/javascript">
+	var swedish = {
+		"merry": "god",
+		"christmas": "jul",
+		"and": "och",
+		"happy": "gott",
+		"new": "nytt",
+		"year": "ar"
+	}
+	function swe(s) {
+		var engWords = s.split(" ")
+		var res = '';
+console.log(engWords)
+		for(var i = 0; i < engWords.length; i++) {
+			res = res + " " + swedish[engWords[i]]; 	
+		}
+		alert(res)
+	}
+	swe("merry merry merry merry merry merry")
+</script>
+</head>
