@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+//x = 5;
+
+elem = document.getElementById("demo"); 
+elem.innerHTML = "Hoisting Real Life demo : var value = " + x;        
+
+add(5, 4);
+
+function add(a, b) {
+	alert(a + b);
+}
+
+var x = 5; 
+</script>
+
+</body>
+</html> 
+

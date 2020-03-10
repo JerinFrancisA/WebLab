@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id = "demo" style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">Scopes + Closure Demo</p>
+<script>
+var userName = "Bill";
+    function createUserName() {
+	   var userName = "Bill";
+       alert("Alert from Scope 1 "+ userName);
+       {	var bV = "Hi ! I'm a block var";
+       		alert("Block Scope from within Block : " + bV);
+       }
+              		alert("Block Scope from outside Block : " + bV);
+    }
+
+	function myFunction(){
+  		//self();
+  		//alert(userName);
+  		alert("oye");
+	}
+    function showUserName() {
+        alert("Alert from Scope 2 "+ userName);
+    }
+ 
+ 	var self1 = (function showUserName() {
+        alert("self 1 invoking function ");
+    })();
+    
+    var self2 = (function showUserName() {
+        alert("self 2 invoking function ");
+    })();
+    
+    var a = (function outer() {
+    	var name = "Geetha Ma'am";
+    	(function inner() {
+    		alert(name);
+    	})();
+    })();
+ 	
+ 	
+    createUserName();
+    showUserName(); 
+
+</script>
+
+</body>
+</html> 
+
